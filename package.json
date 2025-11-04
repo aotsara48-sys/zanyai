@@ -1,0 +1,10 @@
+{
+  "name": "vertex-ai-image-gen",
+  "version": "1.0.0",
+  "description": "Image generation with Vertex AI on Netlify",
+  "dependencies": {
+    "@google-cloud/aiplatform": "^3.16.0",
+    "@google/generative-ai": "^0.1.3",
+    "google-auth-library": "^9.6.3"
+  }
+}

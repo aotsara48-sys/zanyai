@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manamboatra ny sarinao</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="main-title">Manamboatra ny sarinao</h1>
+
+    <div class="upload-section">
+        <label for="imageUpload" class="upload-label">
+            <span class="upload-text">Tsindrio io :</span>
+            Alefaso eto ny Sary
+        </label>
+        <input type="file" id="imageUpload" accept="image/*">
+    </div>
+
+    <div class="controls-section" id="controlsSection">
+        <h2 id="selectionTitle">Safidio ny tinao hanaovana ny sarinao :</h2>
+        
+        <div class="prompt-buttons">
+            <button class="prompt-btn" data-prompt-key="PISCINE">ANATY PISCINE</button>
+            <button class="prompt-btn" data-prompt-key="OMBY">MITAINGINA OMBY</button>
+            <button class="prompt-btn" data-prompt-key="POSTER">POSTER</button>
+            <button class="prompt-btn" data-prompt-key="RANO">MATORY ANATY RANO</button>
+            <button class="prompt-btn" data-prompt-key="MANIDINA">MANIDINA HIANATRA</button>
+            <button class="prompt-btn" data-prompt-key="PILOTE">PILOTE Avion</button>
+            <button class="prompt-btn" data-prompt-key="FILOHA">FILOHAM-PIRENENA</button>
+            <button class="prompt-btn" data-prompt-key="ZEEO">Ze eo</button>
+        </div>
+
+        <textarea id="customPrompt" placeholder="Soraty eto izay tinao hanaovana ny sarinao"></textarea>
+
+        <button id="submitButton">Ataovy</button>
+    </div>
+
+    <div class="output-section">
+        <h3 id="outputTitle">Ny sary vita miseho eto</h3>
+        <div id="imageResultContainer" class="image-container">
+            <div id="loadingSpinner" class="loader" style="display: none;"></div>
+            <img id="resultImage" src="" alt="Sary vita">
+        </div>
+        <div id="downloadContainer" style="display: none;">
+            <div class="arrow">⬇️</div>
+            <button id="downloadButton">ALAIKO</button>
+        </div>
+    </div>
+    
+    <div class="notification" id="notification">EFA MAKA AZY</div>
+
+    <footer class="footer">
+        <a href="https://www.facebook.com/zany.tfranklin" target="_blank" class="footer-link">
+            Pejy noforonin'i Zany Francklin
+        </a>
+    </footer>
+
+    <div class="chat-widget">
+        <button id="chatToggle">Ndao hiresaka</button>
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">Resadresaka</div>
+            <div class="chat-body" id="chatBody">
+                </div>
+            <div class="chat-footer">
+                <input type="text" id="chatInput" placeholder="Manorata eto...">
+                <button id="chatSend">Alefa</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

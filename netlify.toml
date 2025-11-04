@@ -1,0 +1,10 @@
+[build]
+  # Tsy mila command build sarotra isika ho an'ity
+  command = "npm install"
+  # Ny toerana misy ireo "functions"
+  functions = "netlify/functions/"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
